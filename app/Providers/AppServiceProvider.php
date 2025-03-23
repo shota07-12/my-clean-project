@@ -12,7 +12,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind('files', function () {
+        $this->app->singleton('files', function () {
             return new Filesystem;
         });
     }
