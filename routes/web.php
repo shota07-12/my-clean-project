@@ -10,4 +10,6 @@ Route::post('/confirm', [ContactController::class, 'confirm']); // 確認ペー�
 Route::post('/thanks', [ContactController::class, 'store']); // 送信完了ページ
 
 // 管理画面
-Route::get('/admin', [AdminController::class, 'index']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+});
