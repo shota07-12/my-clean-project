@@ -1,0 +1,234 @@
+body {
+    background-color: #fdfdf7;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+button {
+    background-color: #4b3621;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3a2c1b;
+}
+
+/* サブタイトル（Contactなど） */
+h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* フォームのラベルや入力欄の余白 */
+.form-wrapper label,
+.form-wrapper input,
+.form-wrapper textarea,
+.form-wrapper select {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 送信ボタン */
+.form-wrapper button {
+    margin-top: 10px;
+}
+
+.contact-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+/* 性別ラジオボタン */
+.gender-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* ボタン中央寄せ */
+.button-wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.login-wrapper {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 50px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.login-wrapper h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.login-wrapper .sub-title {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.button-wrap {
+    margin-top: 30px;
+}
+
+.btn.btn-secondary {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 10px;
+    position: relative;
+}
+
+.header-inner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* registerボタン */
+.header-link {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-register {
+    padding: 10px 24px;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #555;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-register:hover {
+    background-color: #e6e6e6;
+}
+
+.page-title p {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 60px 0 40px;
+    color: #333;
+}
+
+/* register画面のフォームの入力欄の文字サイズ */
+.register-wrapper input {
+    font-size: 16px;
+}
+
+/* ラベルのサイズ */
+.register-wrapper label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}

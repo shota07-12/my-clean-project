@@ -2,24 +2,24 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use App\Models\Contact;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // カテゴリーを先に入れる
+        $this->call(CategorySeeder::class);
 
+        // テストユーザーを作成
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
 
-        $this->call(CategorySeeder::class);
+        // 35件のダミーお問い合わせを作成
+        Contact::factory()->count(35)->create();
     }
 }

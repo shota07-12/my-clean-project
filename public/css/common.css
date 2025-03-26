@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f6f4;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* タイトル（2行）中央寄せ */
+.page-header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.page-header p {
+    font-size: 20px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* フォーム全体中央＆大きく */
+.form-wrapper {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* ラベルと入力の整え */
+.form-wrapper label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ボタン */
+.form-wrapper button {
+    background-color: #4b3621;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-wrapper button:hover {
+    background-color: #3a2c1b;
+}

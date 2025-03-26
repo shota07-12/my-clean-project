@@ -23,7 +23,16 @@ class ContactFactory extends Factory
             'address' => $this->faker->address,
             'building' => $this->faker->secondaryAddress,
             'category_id' => $this->faker->numberBetween(1, 5), // 1~5のカテゴリID
-            'detail' => $this->faker->realText(50),
+            'detail' => $this->faker->randomElement([
+                '注文した商品が届かないのですが、いつ届きますか？',
+                'サイズを間違えて注文してしまいました。交換できますか？',
+                '支払い完了メールが届きません。',
+                '返品方法について詳しく教えてください。',
+                '領収書の発行は可能ですか？',
+                '発送先の住所を変更したいのですが、可能でしょうか？',
+                '不良品が届いたため、交換を希望します。',
+            ]),
+
             'created_at' => now(),
             'updated_at' => now(),
         ];
