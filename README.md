@@ -80,12 +80,15 @@ docker-compose up -d --build
 ### Laravel初期構築
 
 ```bash
-1. docker-compose exec php bash
-2. composer install
-3. cp .env.example .env
-4. php artisan key:generate
-5. php artisan migrate
-6. php artisan db:seed
+
+docker compose up -d --build
+
+./vendor/bin/sail composer install
+cp .env.example .env
+./vendor/bin/sail php artisan key:generate
+./vendor/bin/sail php artisan migrate --seed
+
+※Laravel Sailを使用しているため、artisan等のコマンドは ./vendor/bin/sail 経由で実行します。
 
 ### 使用技術
 
