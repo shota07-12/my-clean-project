@@ -99,13 +99,11 @@ Docker
 
 Laravel Fortify
 
-JavaScript
-
 ### URL
 アプリ: http://localhost/
 
 phpMyAdmin: http://localhost:8080/
 
 ### ER図
-![ER図](public/images/er-diagram.png)
+![ER図](images/er-diagram.png)
 
