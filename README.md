@@ -107,5 +107,5 @@ JavaScript
 phpMyAdmin: http://localhost:8080/
 
 ### ER図
-![ER図](./er-diagram.png)
+![ER図](public/images/er-diagram.png)
 
